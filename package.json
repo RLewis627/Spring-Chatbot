@@ -1,7 +1,7 @@
 {
-  "name": "psych_chat",
+  "name": "therabot",
   "version": "0.1.0",
-  "homepage": "https://spring-chatbot.github.io/Spring-Chatbot",
+  "homepage": "https://rlewis627.github.io/Therabot/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
