@@ -1,5 +1,5 @@
 import React from "react";
-import './IndexStyle.css';
+import '../css/IndexStyle.css';
 
 class UserLoginBox extends React.Component {
   constructor(props) {
