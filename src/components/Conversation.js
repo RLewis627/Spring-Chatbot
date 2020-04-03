@@ -1,5 +1,5 @@
 import React from "react";
-import './ConversationStyle.css';
+import '../css/ConversationStyle.css';
 import $ from 'jquery';
 
 window.$ = $;
