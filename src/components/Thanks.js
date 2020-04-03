@@ -1,5 +1,5 @@
 import React from "react";
-import './ThankYouPage.css';
+import '../css/ThankYouPage.css';
 
 class Thanks extends React.Component {
   render() {
