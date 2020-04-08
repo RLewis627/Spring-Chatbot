@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<script src="js\myscripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css\MainStyle.css">
+	<link rel="stylesheet" type="text/css" href="css\IndexStyle.css">
+    <head>
+        <title>Therabot | Login</title>
+    </head>
+    <body data-component="UserLoginBox">
+		<h1>Welcome to Therabot</h1>
+		<div id="MainBox">
+			<div id="MainBoxBanner">
+				<div id="MainTextBox">User Login</div>
+			</div>
+			<input type="text" id="LoginUseName" placeholder="Username">
+			<input type="text" id="LoginPIN" placeholder="Enter your PIN">
+			<button class="RegisterButton" type="button" onclick="location.href='RegisterPage.html';">Click here to register</button>
+			<button class="SignInButton" type="submit"  onclick="ChkSignIn()">Sign in</button>
+			<div id="SignInNotSuccess" style="display:none;">Cannot sign in. Please make sure all fields are filled out.</div>
+		</div>
+    </body>
+</html>

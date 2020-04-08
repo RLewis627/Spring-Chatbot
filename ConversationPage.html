@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<script src="js\myscripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css\MainStyle.css">
+	<link rel="stylesheet" type="text/css" href="css\ConversationStyle.css">
+    <head>
+        <title>Therabot</title>
+    </head>
+    <body data-component="Conversation">
+		<h1>Welcome to Therabot</h1>
+		<div id="ContainerBox">
+			<textarea id="ConvoUserInput" type="text" placeholder="What's on your mind?" onsubmit="ShowConvoHistory()"></textarea>
+			<div id="ConvoHistory"></div>
+		</div>
+		<div id="Buttons">
+			<button id="LeaveRoom" type="button" onclick="location.href='ThankYouPage.html';">Leave Chatroom</button>
+			<button id="UserSubmitConvo" type="button" onclick="AppendUserConvo();$('#ConvoUserInput').val('');">Submit</button>
+		</div>
+    </body>
+</html>

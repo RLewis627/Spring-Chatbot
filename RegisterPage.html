@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<script src="js\myscripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css\MainStyle.css">
+	<link rel="stylesheet" type="text/css" href="css\RegisterPageStyle.css">
+    <head>
+        <title>Therabot | Register</title>
+    </head>
+    <body data-component="Register">
+		<h1>Welcome to Therabot</h1>
+		<div id="MainBox">
+			<div id="MainBoxBanner">
+				<div id="MainTextBox">Register</div>
+			</div>
+			<input type="text" id="FirstName" placeholder="First name">
+			<div id="TextMargin">
+				<input type="text" id="UseName" placeholder="Username">
+				<input type="text" id="EmailAdd" placeholder="E-mail address">
+				<input type="text" id="pin" placeholder="Please enter a custom PIN">
+			</div>
+			<button id="DoneButton" type="button" onclick="ChkSuccessReg()">Done</button>
+			<div id="success" style="display:none;" >Success! Please check your e-mail for your username and PIN.</div>
+			<div id="notsuccess" style="display:none;" >Registration was not successful. Please make sure all fields are filled out.</div>
+			<button id="BackToLogin" type="button" onclick="location.href='index.html';" style="display:none;">Login</button>
+		</div>
+    </body>
+</html>
