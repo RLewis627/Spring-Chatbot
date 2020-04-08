@@ -43,7 +43,7 @@ function TherabotResponse(){
 function httpGet()
 {
     var xmlHttp = new XMLHttpRequest();
-    var url = 'http://www.mocky.io/v2/5e8d34ad310000fc5542972d';
+    var url = 'https://www.mocky.io/v2/5e8d34ad310000fc5542972d';
     xmlHttp.open( "GET", url );
     xmlHttp.send();
     return xmlHttp.responseText;
