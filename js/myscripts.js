@@ -32,10 +32,19 @@ function ChkSignIn() {
 function AppendUserConvo(){
 	var UserComment = document.getElementById("ConvoUserInput").value;
 	document.getElementById("ConvoHistory").innerHTML += '<p id="UserComment">'+UserComment+'</p>';
-	document.getElementById("ConvoHistory").innerHTML += '<p id="TherabotComment">'+TherabotResponse()+'</p>';
+	document.getElementById("ConvoHistory").innerHTML += '<p id="TherabotComment">'+httpGet()+'</p>';
 	$('#ConvoHistory').scrollTop($('#ConvoHistory')[0].scrollHeight);
 }
 
 function TherabotResponse(){
 	return "FLARP FLERP FLORP";
+}
+
+function httpGet()
+{
+    var xmlHttp = new XMLHttpRequest();
+    cosnt url = 'http://www.mocky.io/v2/5e8d34ad310000fc5542972d';
+    xmlHttp.open( "GET", url );
+    xmlHttp.send();
+    return xmlHttp.responseText;
 }
